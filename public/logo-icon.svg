@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" aria-hidden="true">
+  <title>ID Photo Maker India</title>
+  <rect
+    x="88"
+    y="72"
+    width="336"
+    height="368"
+    rx="28"
+    ry="28"
+    fill="#ffffff"
+    stroke="#2563EB"
+    stroke-width="18"
+  />
+  <circle cx="212" cy="236" r="76" fill="#EFF6FF" stroke="#2563EB" stroke-width="14" />
+  <circle cx="212" cy="236" r="44" fill="#2563EB" opacity="0.15" />
+  <rect x="312" y="168" width="88" height="14" rx="4" fill="#2563EB" />
+  <rect x="312" y="206" width="112" height="14" rx="4" fill="#2563EB" />
+  <rect x="312" y="244" width="96" height="14" rx="4" fill="#2563EB" />
+</svg>
