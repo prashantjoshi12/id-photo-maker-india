@@ -1,19 +1,97 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" aria-hidden="true">
   <title>ID Photo Maker India</title>
-  <rect
-    x="88"
-    y="72"
-    width="336"
-    height="368"
-    rx="28"
-    ry="28"
-    fill="#ffffff"
-    stroke="#2563EB"
-    stroke-width="18"
-  />
-  <circle cx="212" cy="236" r="76" fill="#EFF6FF" stroke="#2563EB" stroke-width="14" />
-  <circle cx="212" cy="236" r="44" fill="#2563EB" opacity="0.15" />
-  <rect x="312" y="168" width="88" height="14" rx="4" fill="#2563EB" />
-  <rect x="312" y="206" width="112" height="14" rx="4" fill="#2563EB" />
-  <rect x="312" y="244" width="96" height="14" rx="4" fill="#2563EB" />
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <clipPath id="card-clip">
+      <rect x="58" y="106" width="396" height="300" rx="24"/>
+    </clipPath>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#1E3A8A" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- App icon background -->
+  <rect width="512" height="512" rx="108" fill="url(#bg-grad)"/>
+
+  <!-- Subtle highlight -->
+  <rect width="512" height="256" rx="108" fill="white" opacity="0.06"/>
+
+  <!-- Card shadow -->
+  <rect x="58" y="106" width="396" height="300" rx="24" fill="#1D4ED8" opacity="0.4" filter="url(#card-shadow)"/>
+
+  <!-- White card body -->
+  <rect x="58" y="106" width="396" height="300" rx="24" fill="white"/>
+
+  <!-- Tricolor stripe — clipped to card top -->
+  <rect x="58" y="106" width="396" height="11" clip-path="url(#card-clip)" fill="#FF9933"/>
+  <rect x="58" y="117" width="396" height="11" clip-path="url(#card-clip)" fill="white"/>
+  <rect x="58" y="128" width="396" height="11" clip-path="url(#card-clip)" fill="#138808"/>
+
+  <!-- Photo box -->
+  <rect x="86" y="150" width="114" height="140" rx="10" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5"/>
+
+  <!-- Person silhouette: head -->
+  <circle cx="143" cy="192" r="28" fill="#3B82F6" opacity="0.55"/>
+
+  <!-- Person silhouette: shoulders -->
+  <path d="M86 290 Q86 248 143 248 Q200 248 200 290 Z" fill="#3B82F6" opacity="0.5"/>
+
+  <!-- Text: name bar (bold) -->
+  <rect x="224" y="158" width="202" height="18" rx="7" fill="#1E3A8A"/>
+
+  <!-- Thin divider under name -->
+  <rect x="224" y="185" width="202" height="1.5" rx="1" fill="#E2E8F0"/>
+
+  <!-- Text lines -->
+  <rect x="224" y="196" width="172" height="12" rx="5" fill="#93C5FD"/>
+  <rect x="224" y="218" width="188" height="12" rx="5" fill="#BFDBFE"/>
+  <rect x="224" y="240" width="152" height="12" rx="5" fill="#DBEAFE"/>
+  <rect x="224" y="262" width="168" height="12" rx="5" fill="#EFF6FF"/>
+
+  <!-- Horizontal divider above barcode -->
+  <rect x="86" y="308" width="340" height="1.5" rx="1" fill="#E2E8F0"/>
+
+  <!-- Barcode bars -->
+  <rect x="86"  y="320" width="12" height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="102" y="320" width="7"  height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="113" y="320" width="11" height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="128" y="320" width="5"  height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="137" y="320" width="14" height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="155" y="320" width="8"  height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="167" y="320" width="12" height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="183" y="320" width="6"  height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="193" y="320" width="16" height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="213" y="320" width="9"  height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="226" y="320" width="13" height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="243" y="320" width="7"  height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="254" y="320" width="15" height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="273" y="320" width="6"  height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="283" y="320" width="12" height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="299" y="320" width="8"  height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="311" y="320" width="14" height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="329" y="320" width="5"  height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="338" y="320" width="11" height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="353" y="320" width="8"  height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="365" y="320" width="13" height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="382" y="320" width="7"  height="14" rx="1" fill="#CBD5E1"/>
+  <rect x="393" y="320" width="11" height="14" rx="1" fill="#CBD5E1"/>
+
+  <!-- Camera badge (bottom-right corner) -->
+  <circle cx="418" cy="418" r="52" fill="#1E40AF"/>
+  <circle cx="418" cy="418" r="44" fill="#2563EB"/>
+  <!-- Camera body -->
+  <rect x="393" y="404" width="50" height="36" rx="7" fill="white" opacity="0.92"/>
+  <!-- Lens ring -->
+  <circle cx="418" cy="422" r="13" fill="#2563EB" opacity="0.15"/>
+  <circle cx="418" cy="422" r="13" fill="none" stroke="#1E3A8A" stroke-width="2.5" opacity="0.5"/>
+  <!-- Lens -->
+  <circle cx="418" cy="422" r="8" fill="#1D4ED8"/>
+  <circle cx="421" cy="419" r="2.5" fill="white" opacity="0.6"/>
+  <!-- Viewfinder bump -->
+  <rect x="411" y="398" width="14" height="8" rx="3" fill="white" opacity="0.9"/>
+  <!-- Flash dot -->
+  <circle cx="401" cy="408" r="3" fill="white" opacity="0.8"/>
 </svg>
